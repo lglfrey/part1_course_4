@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Валютный конвертер</title>
+    <link rel="stylesheet" href="/style_converter.css">
+</head>
+    <body>
+        <h1>Конвертер валют</h1>
+        <form action="/convert" method="get">
+            <div class="input-container">
+                <input type="number" name="amount" placeholder="Сумма" required min="0">
+                <select name="fromCurrency">
+                    <option value="RUB">Рубль (RUB)</option>
+                    <option value="USD">Доллар (USD)</option>
+                    <option value="EUR">Евро (EUR)</option>
+                    <option value="CNY">Юань (CNY)</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <select name="toCurrency">
+                    <option value="RUB">Рубль (RUB)</option>
+                    <option value="USD">Доллар (USD)</option>
+                    <option value="EUR">Евро (EUR)</option>
+                    <option value="CNY">Юань (CNY)</option>
+                </select>
+                <button type="submit">Конвертировать</button>
+            </div>
+        </form>
+
+        <div class="result-container">
+            <label>Результат:</label>
+            <span th:text="${result}"></span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="/style_calc.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <h1>Калькулятор</h1>
+            <form action="/result" method="post">
+                <label for="first_number">Первое число:</label>
+                <input type="text" id="first_number" name="first_number" required>
+
+                <label for="operator">Операция:</label>
+                <select id="operator" name="operator" required>
+                    <option value="+">Сложение</option>
+                    <option value="-">Вычитание</option>
+                    <option value="*">Умножение</option>
+                    <option value="/">Деление</option>
+                </select>
+
+                <label for="second_number">Второе число:</label>
+                <input type="text" id="second_number" name="second_number" required>
+
+                <button type="submit">Вычислить</button>
+            </form>
+        </div>
+    </body>
+</html>

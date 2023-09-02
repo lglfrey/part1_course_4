@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Результат</title>
+    <link rel="stylesheet" href="/style_calc.css"> <!-- Подключите ваш CSS-файл здесь -->
+  </head>
+  <body>
+    <div class="error-page">
+      <h1 class="error-title">Ошибка</h1>
+      <p class="error-message" th:text="${error}"></p>
+      <a class="error-link" href="/calculator">Назад</a>
+    </div>
+  </body>
+</html>
